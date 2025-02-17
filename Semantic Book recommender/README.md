@@ -1,10 +1,9 @@
 # Book Recommender System
 
-
-# Semantic Book Recommender 📚
+### Semantic Book Recommender 📚
 A personalized book recommendation system that combines semantic search and filters to suggest books based on natural language queries.
 
-# Features:
+### Features:
 - Natural Language Search: Users can describe the kind of book they're looking for in plain English
 - Semantic Understanding: Utilizes HuggingFace embeddings for intelligent book matching
 - Emotional Analysis: Books are classified by emotional tone (Happy, Surprising, Angry, Suspenseful, Sad)
@@ -12,7 +11,7 @@ A personalized book recommendation system that combines semantic search and filt
 - Interactive UI: Clean, modern interface built with Gradio
 - Large Dataset: Powered by a curated dataset of over 5,000 books with rich metadata
 
-# Technical Stack:
+### Tech Stack:
 - Backend: Python with LangChain for vector search
 - Embeddings: HuggingFace Embeddings
 - Vector Store: Chroma DB
@@ -20,7 +19,7 @@ A personalized book recommendation system that combines semantic search and filt
 - UI Framework: Gradio
 - Data Processing: Pandas & NumPy
 
-# Data Pipeline:
+### Data Pipeline:
 1. Initial data cleaning and preprocessing
 2. Fiction/Non-fiction classification using zero-shot learning
 3. Emotional tone analysis using DistilRoBERTa
@@ -28,14 +27,14 @@ A personalized book recommendation system that combines semantic search and filt
 5. Integration with Chroma vector store
 
 
-# Getting Started:
+### Getting Started:
 
-# Key Components
+### Key Components
 - Data Processing
 - Sentiment Analysis
 - Recommendation Engine
  
-# References
+### References
 - Data source used: https://www.kaggle.com/datasets/dylanjcastillo/7k-books-with-metadata/data
 - Reference material: https://www.youtube.com/watch?v=Q7mS1VHm3Yw
 - Emotion analysis model by J. Hartmann
