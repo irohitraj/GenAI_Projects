@@ -3,36 +3,34 @@
 ### Semantic Book Recommender 📚
 A personalized book recommendation system that combines semantic search and filters to suggest books based on natural language queries.
 
+
 ### Features:
-- Natural Language Search: Users can describe the kind of book they're looking for in plain English
+- Natural Language Search: Users can describe the kind of book they're looking for in natural Language
 - Semantic Understanding: Utilizes HuggingFace embeddings for intelligent book matching
 - Emotional Analysis: Books are classified by emotional tone (Happy, Surprising, Angry, Suspenseful, Sad)
-- Category Filtering: Filter recommendations by fiction/non-fiction categories
-- Interactive UI: Clean, modern interface built with Gradio
-- Large Dataset: Powered by a curated dataset of over 5,000 books with rich metadata
+- : Filter recommendations by fiction/non-fiction categories
+- Interactive UI: Built with Gradio
+- Large Dataset: Powered by a curated dataset of over 5,000 books with Features
 
 ### Tech Stack:
 - Backend: Python with LangChain for vector search
 - Embeddings: HuggingFace Embeddings
-- Vector Store: Chroma DB
+- Vector Store/DB: Chroma DB
 - Emotion Analysis: DistilRoBERTa for text classification
 - UI Framework: Gradio
 - Data Processing: Pandas & NumPy
 
 ### Data Pipeline:
 1. Initial data cleaning and preprocessing
-2. Fiction/Non-fiction classification using zero-shot learning
-3. Emotional tone analysis using DistilRoBERTa
-4. Vector embeddings generation for semantic search
-5. Integration with Chroma vector store
+2. Fiction/Non-fiction classification using zero-shot learning using bart-large-mnli model from HuggingFace
+3. Emotional tone analysis using DistilRoBERTa from HuggingFace
+4. Vector embeddings(storing in Chroma DB) generation using paraphrase-MiniLM-L3-v2 model from HuggingFace for semantic search
 
-
-### Getting Started:
 
 ### Key Components
-- Data Processing
-- Sentiment Analysis
-- Recommendation Engine
+- Vector Database: Allows us to find the most similar books to a query
+- Text Classification & Sentiment Analysis: Sorting books into fiction and non-fiction(Users can also filter based on this category) and emotional tone related to the book
+- Dashboard: Integrating everythong together
  
 ### References
 - Data source used: https://www.kaggle.com/datasets/dylanjcastillo/7k-books-with-metadata/data
